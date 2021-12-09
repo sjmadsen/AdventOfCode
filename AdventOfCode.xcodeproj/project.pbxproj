@@ -11,6 +11,7 @@
 		AA0FC5A52757C29D0088115E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0FC5A42757C29D0088115E /* ContentView.swift */; };
 		AA0FC5A72757C2A20088115E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0FC5A62757C2A20088115E /* Assets.xcassets */; };
 		AA0FC5AA2757C2A20088115E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0FC5A92757C2A20088115E /* Preview Assets.xcassets */; };
+		AA1882CF275A9659008D9C72 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AA1882CE275A9659008D9C72 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		AA0FC5A62757C2A20088115E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA0FC5A92757C2A20088115E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA0FC5AB2757C2A20088115E /* AdventOfCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AdventOfCode.entitlements; sourceTree = "<group>"; };
+		AA0FC5B12757C2CA0088115E /* 2021.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2021.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1882CF275A9659008D9C72 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 				AA0FC5A42757C29D0088115E /* ContentView.swift */,
 				AA0FC5A62757C2A20088115E /* Assets.xcassets */,
 				AA0FC5AB2757C2A20088115E /* AdventOfCode.entitlements */,
+				AA0FC5B12757C2CA0088115E /* 2021.playground */,
 				AA0FC5A82757C2A20088115E /* Preview Content */,
 			);
 			path = AdventOfCode;
@@ -85,6 +89,9 @@
 			dependencies = (
 			);
 			name = AdventOfCode;
+			packageProductDependencies = (
+				AA1882CE275A9659008D9C72 /* Algorithms */,
+			);
 			productName = AdventOfCode;
 			productReference = AA0FC59F2757C29D0088115E /* AdventOfCode.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +120,9 @@
 				Base,
 			);
 			mainGroup = AA0FC5962757C29D0088115E;
+			packageReferences = (
+				AA1882CD275A9659008D9C72 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = AA0FC5A02757C29D0088115E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +348,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA1882CD275A9659008D9C72 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+/* Begin XCSwiftPackageProductDependency section */
+		AA1882CE275A9659008D9C72 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA1882CD275A9659008D9C72 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA0FC5972757C29D0088115E /* Project object */;
 }
