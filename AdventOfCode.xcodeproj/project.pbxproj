@@ -76,6 +76,8 @@
 		AA0FC5DF2757C6660088115E /* AdventKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1882C9275A65CB008D9C72 /* Pivot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
 		AA1882CB275A65DE008D9C72 /* PivotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotTests.swift; sourceTree = "<group>"; };
+		AA4F5BF2275FD4C0002B9907 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTests.swift; sourceTree = "<group>"; };
 		AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSubstringTests.swift; sourceTree = "<group>"; };
 		AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSubstring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 				AA0FC5DA2757C6660088115E /* AdventKit.h */,
 				AA1882C9275A65CB008D9C72 /* Pivot.swift */,
 				AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */,
+				AA4F5BF2275FD4C0002B9907 /* Statistics.swift */,
 			);
 			path = AdventKit;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			children = (
 				AA1882CB275A65DE008D9C72 /* PivotTests.swift */,
 				AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */,
+				AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */,
 			);
 			path = AdventKitTests;
 			sourceTree = "<group>";
@@ -341,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACFDBA1275EBE2E00B667FC /* SplitSubstring.swift in Sources */,
+				AA4F5BF3275FD4C0002B9907 /* Statistics.swift in Sources */,
 				AA1882CA275A65CB008D9C72 /* Pivot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACFDB9F275EBDB100B667FC /* SplitSubstringTests.swift in Sources */,
+				AA4F5BF5275FD625002B9907 /* StatisticsTests.swift in Sources */,
 				AA1882CC275A65DE008D9C72 /* PivotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
