@@ -10,6 +10,10 @@ import Nimble
 import AdventKit
 
 class StatisticsTests: XCTestCase {
+    func testMedian() {
+        expect([1,8,4].median()) == 4
+    }
+
     func testMode() {
         expect([16,1,2,0,4,2,7,1,2,14].mode()) == [2]
         expect([1,1,2,2].mode().sorted()) == [1,2]

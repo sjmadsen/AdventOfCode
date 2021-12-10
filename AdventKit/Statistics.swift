@@ -7,6 +7,13 @@
 
 import Foundation
 
+public extension Collection where Element: Comparable {
+    func median() -> Element {
+        let sorted = sorted()
+        return sorted[sorted.count / 2]
+    }
+}
+
 public extension Collection where Element: Numeric & Hashable {
     func mode() -> [Element] {
         var counts = [Element: Int]()
