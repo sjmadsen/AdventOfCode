@@ -25,6 +25,8 @@
 		AA4F5BF5275FD625002B9907 /* StatisticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */; };
 		AACFDB9F275EBDB100B667FC /* SplitSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */; };
 		AACFDBA1275EBE2E00B667FC /* SplitSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */; };
+		AAE1D5D12767938A001761F4 /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D5D02767938A001761F4 /* Count.swift */; };
+		AAE1D5D3276793F6001761F4 /* CountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D5D2276793F6001761F4 /* CountTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTests.swift; sourceTree = "<group>"; };
 		AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSubstringTests.swift; sourceTree = "<group>"; };
 		AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSubstring.swift; sourceTree = "<group>"; };
+		AAE1D5D02767938A001761F4 /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
+		AAE1D5D2276793F6001761F4 /* CountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				AA0FC5DA2757C6660088115E /* AdventKit.h */,
+				AAE1D5D02767938A001761F4 /* Count.swift */,
 				AA1882C9275A65CB008D9C72 /* Pivot.swift */,
 				AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */,
 				AA4F5BF2275FD4C0002B9907 /* Statistics.swift */,
@@ -176,6 +181,7 @@
 				AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */,
 				AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */,
 				AA14F3CC27664CC2005328CD /* TrimmedTests.swift */,
+				AAE1D5D2276793F6001761F4 /* CountTests.swift */,
 			);
 			path = AdventKitTests;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACFDBA1275EBE2E00B667FC /* SplitSubstring.swift in Sources */,
+				AAE1D5D12767938A001761F4 /* Count.swift in Sources */,
 				AA4F5BF3275FD4C0002B9907 /* Statistics.swift in Sources */,
 				AA14F3CF27664D08005328CD /* Trimmed.swift in Sources */,
 				AA1882CA275A65CB008D9C72 /* Pivot.swift in Sources */,
@@ -365,6 +372,7 @@
 				AA4F5BF5275FD625002B9907 /* StatisticsTests.swift in Sources */,
 				AA14F3CD27664CC2005328CD /* TrimmedTests.swift in Sources */,
 				AA1882CC275A65DE008D9C72 /* PivotTests.swift in Sources */,
+				AAE1D5D3276793F6001761F4 /* CountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
