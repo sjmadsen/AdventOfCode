@@ -7,9 +7,9 @@
 
 import Foundation
 
-public extension String {
-    func split(separator: String) -> [String.SubSequence] {
-        var parts = [String.SubSequence]()
+public extension StringProtocol {
+    func split<S: StringProtocol>(separator: S) -> [Self.SubSequence] {
+        var parts = type(of: [self[...startIndex]]).init()
         var rangeStart = startIndex
         var rangeEnd = rangeStart
         while rangeEnd < endIndex {
