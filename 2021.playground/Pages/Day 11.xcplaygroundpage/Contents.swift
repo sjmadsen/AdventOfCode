@@ -9,10 +9,6 @@ let input = try String(contentsOf: Bundle.main.url(forResource: "input", withExt
         $0.map { Int(String($0))! }
     }
 
-struct Point: Hashable {
-    let x, y: Int
-}
-
 // Part 1
 func flashes(octopi: [[Int]]) -> Set<Point> {
     product(0..<octopi[0].count, 0..<octopi.count)

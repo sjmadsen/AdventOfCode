@@ -14,8 +14,12 @@
 		AA14F3CF27664D08005328CD /* Trimmed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14F3CE27664D08005328CD /* Trimmed.swift */; };
 		AA1882CA275A65CB008D9C72 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1882C9275A65CB008D9C72 /* Pivot.swift */; };
 		AA1882CC275A65DE008D9C72 /* PivotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1882CB275A65DE008D9C72 /* PivotTests.swift */; };
+		AA45F8A7276A53910036A099 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AA45F8A6276A53910036A099 /* Algorithms */; };
+		AA45F8A8276A53910036A099 /* AdventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0FC5D82757C6650088115E /* AdventKit.framework */; };
+		AA45F8B1276A99640036A099 /* Timed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F8B0276A99640036A099 /* Timed.swift */; };
 		AA4F5BF3275FD4C0002B9907 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F5BF2275FD4C0002B9907 /* Statistics.swift */; };
 		AA4F5BF5275FD625002B9907 /* StatisticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */; };
+		AA72E836276A370700ACEBAD /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72E835276A370700ACEBAD /* Point.swift */; };
 		AAA63FFC2768FD9100CAF979 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA63FFB2768FD9100CAF979 /* main.swift */; };
 		AACFDB9F275EBDB100B667FC /* SplitSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */; };
 		AACFDBA1275EBE2E00B667FC /* SplitSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */; };
@@ -54,8 +58,10 @@
 		AA14F3CE27664D08005328CD /* Trimmed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trimmed.swift; sourceTree = "<group>"; };
 		AA1882C9275A65CB008D9C72 /* Pivot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
 		AA1882CB275A65DE008D9C72 /* PivotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotTests.swift; sourceTree = "<group>"; };
+		AA45F8B0276A99640036A099 /* Timed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timed.swift; sourceTree = "<group>"; };
 		AA4F5BF2275FD4C0002B9907 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTests.swift; sourceTree = "<group>"; };
+		AA72E835276A370700ACEBAD /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		AAA63FF92768FD9100CAF979 /* Dummy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Dummy; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA63FFB2768FD9100CAF979 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSubstringTests.swift; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA45F8A8276A53910036A099 /* AdventKit.framework in Frameworks */,
+				AA45F8A7276A53910036A099 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +127,10 @@
 				AA0FC5DA2757C6660088115E /* AdventKit.h */,
 				AAE1D5D02767938A001761F4 /* Count.swift */,
 				AA1882C9275A65CB008D9C72 /* Pivot.swift */,
+				AA72E835276A370700ACEBAD /* Point.swift */,
 				AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */,
 				AA4F5BF2275FD4C0002B9907 /* Statistics.swift */,
+				AA45F8B0276A99640036A099 /* Timed.swift */,
 				AA14F3CE27664D08005328CD /* Trimmed.swift */,
 			);
 			path = AdventKit;
@@ -219,6 +229,9 @@
 			dependencies = (
 			);
 			name = Dummy;
+			packageProductDependencies = (
+				AA45F8A6276A53910036A099 /* Algorithms */,
+			);
 			productName = Dummy;
 			productReference = AAA63FF92768FD9100CAF979 /* Dummy */;
 			productType = "com.apple.product-type.tool";
@@ -231,7 +244,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					AA0FC5D72757C6650088115E = {
 						CreatedOnToolsVersion = 13.1;
@@ -293,6 +306,8 @@
 			files = (
 				AACFDBA1275EBE2E00B667FC /* SplitSubstring.swift in Sources */,
 				AAE1D5D12767938A001761F4 /* Count.swift in Sources */,
+				AA45F8B1276A99640036A099 /* Timed.swift in Sources */,
+				AA72E836276A370700ACEBAD /* Point.swift in Sources */,
 				AA4F5BF3275FD4C0002B9907 /* Statistics.swift in Sources */,
 				AA14F3CF27664D08005328CD /* Trimmed.swift in Sources */,
 				AA1882CA275A65CB008D9C72 /* Pivot.swift in Sources */,
@@ -641,6 +656,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA0FC5F32757C6A40088115E /* XCRemoteSwiftPackageReference "Nimble" */;
 			productName = Nimble;
+		};
+		AA45F8A6276A53910036A099 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA1882CD275A9659008D9C72 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

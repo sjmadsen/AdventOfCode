@@ -5,10 +5,6 @@ import Foundation
 let input = try String(contentsOf: Bundle.main.url(forResource: "input", withExtension: "")!).split(separator: "\n")
     .map { $0.map { Int(String($0))! } }
 
-struct Point: Hashable {
-    let x, y: Int
-}
-
 // Part 1
 func isLowPoint(_ input: [[Int]], x: Int, y: Int) -> Bool {
     let value = input[y][x]
