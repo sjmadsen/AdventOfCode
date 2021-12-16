@@ -14,6 +14,8 @@
 		AA14F3CF27664D08005328CD /* Trimmed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14F3CE27664D08005328CD /* Trimmed.swift */; };
 		AA1882CA275A65CB008D9C72 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1882C9275A65CB008D9C72 /* Pivot.swift */; };
 		AA1882CC275A65DE008D9C72 /* PivotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1882CB275A65DE008D9C72 /* PivotTests.swift */; };
+		AA195B67276BA46000CC5D7C /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA195B66276BA46000CC5D7C /* PriorityQueue.swift */; };
+		AA195B69276BA47100CC5D7C /* PriorityQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA195B68276BA47100CC5D7C /* PriorityQueueTests.swift */; };
 		AA45F8A7276A53910036A099 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AA45F8A6276A53910036A099 /* Algorithms */; };
 		AA45F8A8276A53910036A099 /* AdventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0FC5D82757C6650088115E /* AdventKit.framework */; };
 		AA45F8B1276A99640036A099 /* Timed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F8B0276A99640036A099 /* Timed.swift */; };
@@ -58,6 +60,8 @@
 		AA14F3CE27664D08005328CD /* Trimmed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trimmed.swift; sourceTree = "<group>"; };
 		AA1882C9275A65CB008D9C72 /* Pivot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
 		AA1882CB275A65DE008D9C72 /* PivotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PivotTests.swift; sourceTree = "<group>"; };
+		AA195B66276BA46000CC5D7C /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		AA195B68276BA47100CC5D7C /* PriorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTests.swift; sourceTree = "<group>"; };
 		AA45F8B0276A99640036A099 /* Timed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timed.swift; sourceTree = "<group>"; };
 		AA4F5BF2275FD4C0002B9907 /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 		AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTests.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				AAE1D5D02767938A001761F4 /* Count.swift */,
 				AA1882C9275A65CB008D9C72 /* Pivot.swift */,
 				AA72E835276A370700ACEBAD /* Point.swift */,
+				AA195B66276BA46000CC5D7C /* PriorityQueue.swift */,
 				AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */,
 				AA4F5BF2275FD4C0002B9907 /* Statistics.swift */,
 				AA45F8B0276A99640036A099 /* Timed.swift */,
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				AA1882CB275A65DE008D9C72 /* PivotTests.swift */,
+				AA195B68276BA47100CC5D7C /* PriorityQueueTests.swift */,
 				AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */,
 				AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */,
 				AA14F3CC27664CC2005328CD /* TrimmedTests.swift */,
@@ -309,6 +315,7 @@
 				AA45F8B1276A99640036A099 /* Timed.swift in Sources */,
 				AA72E836276A370700ACEBAD /* Point.swift in Sources */,
 				AA4F5BF3275FD4C0002B9907 /* Statistics.swift in Sources */,
+				AA195B67276BA46000CC5D7C /* PriorityQueue.swift in Sources */,
 				AA14F3CF27664D08005328CD /* Trimmed.swift in Sources */,
 				AA1882CA275A65CB008D9C72 /* Pivot.swift in Sources */,
 			);
@@ -323,6 +330,7 @@
 				AA14F3CD27664CC2005328CD /* TrimmedTests.swift in Sources */,
 				AA1882CC275A65DE008D9C72 /* PivotTests.swift in Sources */,
 				AAE1D5D3276793F6001761F4 /* CountTests.swift in Sources */,
+				AA195B69276BA47100CC5D7C /* PriorityQueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
