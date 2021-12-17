@@ -21,6 +21,9 @@
 		AA0DE328276BFAB600AC33AF /* day14.input in Resources */ = {isa = PBXBuildFile; fileRef = AA0DE327276BFAB100AC33AF /* day14.input */; };
 		AA0DE32A276BFAC500AC33AF /* day15.input in Resources */ = {isa = PBXBuildFile; fileRef = AA0DE329276BFABE00AC33AF /* day15.input */; };
 		AA0DE32C276BFAD500AC33AF /* day16.input in Resources */ = {isa = PBXBuildFile; fileRef = AA0DE32B276BFACD00AC33AF /* day16.input */; };
+		AA0DE32E276CD56A00AC33AF /* Day17.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE32D276CD56900AC33AF /* Day17.swift */; };
+		AA0DE330276CD9FF00AC33AF /* PointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE32F276CD9FF00AC33AF /* PointTests.swift */; };
+		AA0DE332276CF04A00AC33AF /* day17.input in Resources */ = {isa = PBXBuildFile; fileRef = AA0DE331276CF04A00AC33AF /* day17.input */; };
 		AA0FC5E02757C6660088115E /* AdventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0FC5D82757C6650088115E /* AdventKit.framework */; };
 		AA0FC5E82757C6660088115E /* AdventKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0FC5DA2757C6660088115E /* AdventKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0FC5FA2757CA650088115E /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = AA0FC5F92757CA650088115E /* Nimble */; };
@@ -89,6 +92,9 @@
 		AA0DE327276BFAB100AC33AF /* day14.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day14.input; sourceTree = "<group>"; };
 		AA0DE329276BFABE00AC33AF /* day15.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day15.input; sourceTree = "<group>"; };
 		AA0DE32B276BFACD00AC33AF /* day16.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day16.input; sourceTree = "<group>"; };
+		AA0DE32D276CD56900AC33AF /* Day17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day17.swift; sourceTree = "<group>"; };
+		AA0DE32F276CD9FF00AC33AF /* PointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointTests.swift; sourceTree = "<group>"; };
+		AA0DE331276CF04A00AC33AF /* day17.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day17.input; sourceTree = "<group>"; };
 		AA0FC5D82757C6650088115E /* AdventKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0FC5DA2757C6660088115E /* AdventKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventKit.h; sourceTree = "<group>"; };
 		AA0FC5DF2757C6660088115E /* AdventKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				AA1882CB275A65DE008D9C72 /* PivotTests.swift */,
+				AA0DE32F276CD9FF00AC33AF /* PointTests.swift */,
 				AA195B68276BA47100CC5D7C /* PriorityQueueTests.swift */,
 				AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */,
 				AA4F5BF4275FD625002B9907 /* StatisticsTests.swift */,
@@ -255,6 +262,8 @@
 				AA0DE329276BFABE00AC33AF /* day15.input */,
 				AA0DE31D276BF8A500AC33AF /* Day16.swift */,
 				AA0DE32B276BFACD00AC33AF /* day16.input */,
+				AA0DE32D276CD56900AC33AF /* Day17.swift */,
+				AA0DE331276CF04A00AC33AF /* day17.input */,
 				AA195B8A276BD0B600CC5D7C /* Assets.xcassets */,
 				AA195B8F276BD0B600CC5D7C /* AoC2021.entitlements */,
 				AA195B8C276BD0B600CC5D7C /* Preview Content */,
@@ -418,6 +427,7 @@
 				AA195B8B276BD0B600CC5D7C /* Assets.xcassets in Resources */,
 				AA0DE32A276BFAC500AC33AF /* day15.input in Resources */,
 				AA195BAF276BE24000CC5D7C /* day7.input in Resources */,
+				AA0DE332276CF04A00AC33AF /* day17.input in Resources */,
 				AA195BAB276BE0FD00CC5D7C /* day6.input in Resources */,
 				AA195BB9276BEAD000CC5D7C /* day9.input in Resources */,
 				AA195B9F276BDB7600CC5D7C /* day3.input in Resources */,
@@ -457,6 +467,7 @@
 				AA4F5BF5275FD625002B9907 /* StatisticsTests.swift in Sources */,
 				AA14F3CD27664CC2005328CD /* TrimmedTests.swift in Sources */,
 				AA1882CC275A65DE008D9C72 /* PivotTests.swift in Sources */,
+				AA0DE330276CD9FF00AC33AF /* PointTests.swift in Sources */,
 				AAE1D5D3276793F6001761F4 /* CountTests.swift in Sources */,
 				AA195B69276BA47100CC5D7C /* PriorityQueueTests.swift in Sources */,
 			);
@@ -474,6 +485,7 @@
 				AA195B99276BD5F200CC5D7C /* Day2.swift in Sources */,
 				AA195B9D276BD98D00CC5D7C /* Day3.swift in Sources */,
 				AA0DE312276BF82A00AC33AF /* Day10.swift in Sources */,
+				AA0DE32E276CD56A00AC33AF /* Day17.swift in Sources */,
 				AA195BA5276BDFBC00CC5D7C /* Day5.swift in Sources */,
 				AA0DE318276BF87F00AC33AF /* Day13.swift in Sources */,
 				AA0DE31A276BF88B00AC33AF /* Day14.swift in Sources */,
