@@ -11,9 +11,10 @@ import AdventKit
 
 class SplitSubstringTests: XCTestCase {
     func testSplitBySubstring() {
-        expect("foo + bar + baz".split(separator: " + ")) == ["foo", "bar", "baz"]
-        expect(" + bar + baz".split(separator: " + ")) == ["", "bar", "baz"]
-        expect("foo + bar + ".split(separator: " + ")) == ["foo", "bar", ""]
-        expect("foo + bar +".split(separator: " + ")) == ["foo", "bar +"]
+        expect("foo + bar + baz".split(substring: " + ")) == ["foo", "bar", "baz"]
+        expect(" + bar + baz".split(substring: " + ")) == ["", "bar", "baz"]
+        expect("foo + bar + ".split(substring: " + ")) == ["foo", "bar", ""]
+        expect("foo + bar +".split(substring: " + ")) == ["foo", "bar +"]
+        expect("".split(substring: " ")) == []
     }
 }
