@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA06D686276E35B00083C75A /* Day18.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06D685276E35B00083C75A /* Day18.swift */; };
+		AA06D688276E5EB30083C75A /* day18.input in Resources */ = {isa = PBXBuildFile; fileRef = AA06D687276E5EB30083C75A /* day18.input */; };
 		AA0DE312276BF82A00AC33AF /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE311276BF82A00AC33AF /* Day10.swift */; };
 		AA0DE314276BF86300AC33AF /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE313276BF86300AC33AF /* Day11.swift */; };
 		AA0DE316276BF87300AC33AF /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE315276BF87300AC33AF /* Day12.swift */; };
@@ -78,6 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA06D685276E35B00083C75A /* Day18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day18.swift; sourceTree = "<group>"; };
+		AA06D687276E5EB30083C75A /* day18.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day18.input; sourceTree = "<group>"; };
 		AA0DE311276BF82A00AC33AF /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		AA0DE313276BF86300AC33AF /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		AA0DE315276BF87300AC33AF /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 				AA0DE32B276BFACD00AC33AF /* day16.input */,
 				AA0DE32D276CD56900AC33AF /* Day17.swift */,
 				AA0DE331276CF04A00AC33AF /* day17.input */,
+				AA06D685276E35B00083C75A /* Day18.swift */,
+				AA06D687276E5EB30083C75A /* day18.input */,
 				AA195B8A276BD0B600CC5D7C /* Assets.xcassets */,
 				AA195B8F276BD0B600CC5D7C /* AoC2021.entitlements */,
 				AA195B8C276BD0B600CC5D7C /* Preview Content */,
@@ -435,6 +441,7 @@
 				AA195BA3276BDD2700CC5D7C /* day4.input in Resources */,
 				AA0DE326276BFAA800AC33AF /* day13.input in Resources */,
 				AA0DE328276BFAB600AC33AF /* day14.input in Resources */,
+				AA06D688276E5EB30083C75A /* day18.input in Resources */,
 				AA195BB3276BE3A600CC5D7C /* day8.input in Resources */,
 				AA0DE324276BFA9600AC33AF /* day12.input in Resources */,
 				AA195B97276BD3EA00CC5D7C /* day1.input in Resources */,
@@ -494,6 +501,7 @@
 				AA195BA9276BE0C300CC5D7C /* Day6.swift in Sources */,
 				AA195BB1276BE38900CC5D7C /* Day8.swift in Sources */,
 				AA0DE316276BF87300AC33AF /* Day12.swift in Sources */,
+				AA06D686276E35B00083C75A /* Day18.swift in Sources */,
 				AA195BB7276BE6DF00CC5D7C /* ContentView.swift in Sources */,
 				AA195B87276BD0B500CC5D7C /* AoC2021App.swift in Sources */,
 			);
