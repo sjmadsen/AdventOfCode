@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AA06D686276E35B00083C75A /* Day18.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06D685276E35B00083C75A /* Day18.swift */; };
 		AA06D688276E5EB30083C75A /* day18.input in Resources */ = {isa = PBXBuildFile; fileRef = AA06D687276E5EB30083C75A /* day18.input */; };
+		AA06D68A276F7DC80083C75A /* Day19.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06D689276F7DC80083C75A /* Day19.swift */; };
+		AA06D68C276F80A90083C75A /* day19.sample in Resources */ = {isa = PBXBuildFile; fileRef = AA06D68B276F80A90083C75A /* day19.sample */; };
+		AA06D68E276F80EE0083C75A /* day19.input in Resources */ = {isa = PBXBuildFile; fileRef = AA06D68D276F80EE0083C75A /* day19.input */; };
 		AA0DE312276BF82A00AC33AF /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE311276BF82A00AC33AF /* Day10.swift */; };
 		AA0DE314276BF86300AC33AF /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE313276BF86300AC33AF /* Day11.swift */; };
 		AA0DE316276BF87300AC33AF /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DE315276BF87300AC33AF /* Day12.swift */; };
@@ -82,6 +85,9 @@
 /* Begin PBXFileReference section */
 		AA06D685276E35B00083C75A /* Day18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day18.swift; sourceTree = "<group>"; };
 		AA06D687276E5EB30083C75A /* day18.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day18.input; sourceTree = "<group>"; };
+		AA06D689276F7DC80083C75A /* Day19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day19.swift; sourceTree = "<group>"; };
+		AA06D68B276F80A90083C75A /* day19.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = day19.sample; sourceTree = "<group>"; };
+		AA06D68D276F80EE0083C75A /* day19.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day19.input; sourceTree = "<group>"; };
 		AA0DE311276BF82A00AC33AF /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		AA0DE313276BF86300AC33AF /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		AA0DE315276BF87300AC33AF /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
@@ -270,6 +276,9 @@
 				AA0DE331276CF04A00AC33AF /* day17.input */,
 				AA06D685276E35B00083C75A /* Day18.swift */,
 				AA06D687276E5EB30083C75A /* day18.input */,
+				AA06D689276F7DC80083C75A /* Day19.swift */,
+				AA06D68B276F80A90083C75A /* day19.sample */,
+				AA06D68D276F80EE0083C75A /* day19.input */,
 				AA195B8A276BD0B600CC5D7C /* Assets.xcassets */,
 				AA195B8F276BD0B600CC5D7C /* AoC2021.entitlements */,
 				AA195B8C276BD0B600CC5D7C /* Preview Content */,
@@ -426,11 +435,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA195B9B276BD68A00CC5D7C /* day2.input in Resources */,
+				AA06D68E276F80EE0083C75A /* day19.input in Resources */,
 				AA0DE322276BFA8700AC33AF /* day11.input in Resources */,
 				AA0DE32C276BFAD500AC33AF /* day16.input in Resources */,
 				AA195B8E276BD0B600CC5D7C /* Preview Assets.xcassets in Resources */,
 				AA195BA7276BDFD200CC5D7C /* day5.input in Resources */,
 				AA195B8B276BD0B600CC5D7C /* Assets.xcassets in Resources */,
+				AA06D68C276F80A90083C75A /* day19.sample in Resources */,
 				AA0DE32A276BFAC500AC33AF /* day15.input in Resources */,
 				AA195BAF276BE24000CC5D7C /* day7.input in Resources */,
 				AA0DE332276CF04A00AC33AF /* day17.input in Resources */,
@@ -500,6 +511,7 @@
 				AA195BB5276BE57300CC5D7C /* Day9.swift in Sources */,
 				AA195BA9276BE0C300CC5D7C /* Day6.swift in Sources */,
 				AA195BB1276BE38900CC5D7C /* Day8.swift in Sources */,
+				AA06D68A276F7DC80083C75A /* Day19.swift in Sources */,
 				AA0DE316276BF87300AC33AF /* Day12.swift in Sources */,
 				AA06D686276E35B00083C75A /* Day18.swift in Sources */,
 				AA195BB7276BE6DF00CC5D7C /* ContentView.swift in Sources */,
