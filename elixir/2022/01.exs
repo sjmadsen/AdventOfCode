@@ -1,4 +1,4 @@
-{:ok, lines} = File.read("1.input")
+{:ok, lines} = File.read("data/1.input")
 calories_per_elf = lines
 |> String.trim()
 |> String.split("\n\n")
