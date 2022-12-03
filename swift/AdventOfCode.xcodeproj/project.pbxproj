@@ -76,6 +76,9 @@
 		AA972D452939017100DF8B11 /* day1.input in Resources */ = {isa = PBXBuildFile; fileRef = AA972D442939017100DF8B11 /* day1.input */; };
 		AA972D47293A410D00DF8B11 /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA972D46293A410D00DF8B11 /* Day2.swift */; };
 		AA972D49293A452600DF8B11 /* day2.input in Resources */ = {isa = PBXBuildFile; fileRef = AA972D48293A452600DF8B11 /* day2.input */; };
+		AA972D4F293B9F8900DF8B11 /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA972D4E293B9F8900DF8B11 /* Day3.swift */; };
+		AA972D51293BA25700DF8B11 /* day3.input in Resources */ = {isa = PBXBuildFile; fileRef = AA972D50293BA25700DF8B11 /* day3.input */; };
+		AA972D53293BA36100DF8B11 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AA972D52293BA36100DF8B11 /* Algorithms */; };
 		AACFDB9F275EBDB100B667FC /* SplitSubstringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */; };
 		AACFDBA1275EBE2E00B667FC /* SplitSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */; };
 		AAE1D5D12767938A001761F4 /* Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D5D02767938A001761F4 /* Count.swift */; };
@@ -183,6 +186,8 @@
 		AA972D442939017100DF8B11 /* day1.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day1.input; sourceTree = "<group>"; };
 		AA972D46293A410D00DF8B11 /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
 		AA972D48293A452600DF8B11 /* day2.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day2.input; sourceTree = "<group>"; };
+		AA972D4E293B9F8900DF8B11 /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
+		AA972D50293BA25700DF8B11 /* day3.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day3.input; sourceTree = "<group>"; };
 		AACFDB9E275EBDB100B667FC /* SplitSubstringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSubstringTests.swift; sourceTree = "<group>"; };
 		AACFDBA0275EBE2E00B667FC /* SplitSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSubstring.swift; sourceTree = "<group>"; };
 		AAE1D5D02767938A001761F4 /* Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Count.swift; sourceTree = "<group>"; };
@@ -219,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA972D53293BA36100DF8B11 /* Algorithms in Frameworks */,
 				AA972D3D2938F03400DF8B11 /* AdventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +360,8 @@
 				AA972D442939017100DF8B11 /* day1.input */,
 				AA972D46293A410D00DF8B11 /* Day2.swift */,
 				AA972D48293A452600DF8B11 /* day2.input */,
+				AA972D4E293B9F8900DF8B11 /* Day3.swift */,
+				AA972D50293BA25700DF8B11 /* day3.input */,
 				AA972D342938F02600DF8B11 /* Assets.xcassets */,
 				AA972D392938F02600DF8B11 /* AoC2022.entitlements */,
 				AA972D362938F02600DF8B11 /* Preview Content */,
@@ -459,6 +467,9 @@
 				AA972D402938F03400DF8B11 /* PBXTargetDependency */,
 			);
 			name = AoC2022;
+			packageProductDependencies = (
+				AA972D52293BA36100DF8B11 /* Algorithms */,
+			);
 			productName = AoC2022;
 			productReference = AA972D2E2938F02500DF8B11 /* AoC2022.app */;
 			productType = "com.apple.product-type.application";
@@ -564,6 +575,7 @@
 				AA972D49293A452600DF8B11 /* day2.input in Resources */,
 				AA972D382938F02600DF8B11 /* Preview Assets.xcassets in Resources */,
 				AA972D452939017100DF8B11 /* day1.input in Resources */,
+				AA972D51293BA25700DF8B11 /* day3.input in Resources */,
 				AA972D352938F02600DF8B11 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA972D332938F02500DF8B11 /* ContentView.swift in Sources */,
+				AA972D4F293B9F8900DF8B11 /* Day3.swift in Sources */,
 				AA972D47293A410D00DF8B11 /* Day2.swift in Sources */,
 				AA972D432938FE0400DF8B11 /* Day1.swift in Sources */,
 				AA972D312938F02500DF8B11 /* AoC2022App.swift in Sources */,
@@ -1085,6 +1098,11 @@
 			productName = Nimble;
 		};
 		AA195B93276BD19A00CC5D7C /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA1882CD275A9659008D9C72 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		AA972D52293BA36100DF8B11 /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AA1882CD275A9659008D9C72 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
