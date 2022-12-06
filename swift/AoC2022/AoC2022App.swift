@@ -18,7 +18,7 @@ class Day: ObservableObject {
 struct AoC2022App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(day: Day5())
+            ContentView(day: Day6())
                 .frame(width: 350, height: 100)
         }
     }
