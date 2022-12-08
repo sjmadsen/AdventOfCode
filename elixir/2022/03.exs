@@ -3,7 +3,7 @@ defmodule Day3 do
   def value(c), do: c - ?A + 27
 end
 
-File.stream!("data/3.input")
+File.stream!("2022/data/3.input")
 |> Enum.map(&String.trim/1)
 |> Enum.map(fn line ->
   {first, second} = String.split_at(line, div(String.length(line), 2))

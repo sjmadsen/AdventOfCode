@@ -10,7 +10,7 @@ defmodule Day4 do
   end
 end
 
-File.stream!("data/4.input")
+File.stream!("2022/data/4.input")
 |> Enum.map(&String.trim/1)
 |> Enum.map(&Day4.parse_ranges/1)
 |> Enum.count(fn {first, second} ->
@@ -18,7 +18,7 @@ File.stream!("data/4.input")
 end)
 |> IO.puts
 
-File.stream!("data/4.input")
+File.stream!("2022/data/4.input")
 |> Enum.map(&String.trim/1)
 |> Enum.map(&Day4.parse_ranges/1)
 |> Enum.count(fn {first, second} ->

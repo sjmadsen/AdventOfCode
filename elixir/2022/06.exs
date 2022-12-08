@@ -16,7 +16,7 @@ defmodule Day6 do
   end
 end
 
-input = File.read!("data/6.input")
+input = File.read!("2022/data/6.input")
 
 input
 |> Day6.part1

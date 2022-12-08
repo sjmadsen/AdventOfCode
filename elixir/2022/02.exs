@@ -20,7 +20,7 @@ defmodule Day2 do
   end
 end
 
-File.stream!("data/2.input")
+File.stream!("2022/data/2.input")
 |> Enum.map(&Day2.part2/1)
 |> Enum.reduce(0, &+/2)
 |> IO.puts()

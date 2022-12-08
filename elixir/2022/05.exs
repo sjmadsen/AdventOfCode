@@ -67,7 +67,7 @@ defmodule Day5 do
   end
 end
 
-{stacks, instructions} = File.stream!("data/5.input")
+{stacks, instructions} = File.stream!("2022/data/5.input")
 |> Enum.map(&String.trim_trailing/1)
 |> Enum.split_while(&(&1 != ""))
 
