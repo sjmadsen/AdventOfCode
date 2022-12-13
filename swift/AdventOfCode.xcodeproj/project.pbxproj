@@ -33,6 +33,8 @@
 		AA0FC5E82757C6660088115E /* AdventKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA0FC5DA2757C6660088115E /* AdventKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA0FC5FA2757CA650088115E /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = AA0FC5F92757CA650088115E /* Nimble */; };
 		AA1028DC29477A5A006664C2 /* day12.input in Resources */ = {isa = PBXBuildFile; fileRef = AA1028DB29477A5A006664C2 /* day12.input */; };
+		AA1028DE2948C80B006664C2 /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1028DD2948C80B006664C2 /* Day13.swift */; };
+		AA1028E02948E26A006664C2 /* day13.input in Resources */ = {isa = PBXBuildFile; fileRef = AA1028DF2948E26A006664C2 /* day13.input */; };
 		AA14F3CD27664CC2005328CD /* TrimmedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14F3CC27664CC2005328CD /* TrimmedTests.swift */; };
 		AA14F3CF27664D08005328CD /* Trimmed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14F3CE27664D08005328CD /* Trimmed.swift */; };
 		AA1882CA275A65CB008D9C72 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1882C9275A65CB008D9C72 /* Pivot.swift */; };
@@ -161,6 +163,8 @@
 		AA0FC5DA2757C6660088115E /* AdventKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdventKit.h; sourceTree = "<group>"; };
 		AA0FC5DF2757C6660088115E /* AdventKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1028DB29477A5A006664C2 /* day12.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day12.input; sourceTree = "<group>"; };
+		AA1028DD2948C80B006664C2 /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
+		AA1028DF2948E26A006664C2 /* day13.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day13.input; sourceTree = "<group>"; };
 		AA14F3CC27664CC2005328CD /* TrimmedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmedTests.swift; sourceTree = "<group>"; };
 		AA14F3CE27664D08005328CD /* Trimmed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trimmed.swift; sourceTree = "<group>"; };
 		AA1882C9275A65CB008D9C72 /* Pivot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
@@ -416,6 +420,8 @@
 				AADE400D294639F6001C2724 /* day11.input */,
 				AADE401529476D4C001C2724 /* Day12.swift */,
 				AA1028DB29477A5A006664C2 /* day12.input */,
+				AA1028DD2948C80B006664C2 /* Day13.swift */,
+				AA1028DF2948E26A006664C2 /* day13.input */,
 				AA972D342938F02600DF8B11 /* Assets.xcassets */,
 				AA972D392938F02600DF8B11 /* AoC2022.entitlements */,
 				AA972D362938F02600DF8B11 /* Preview Content */,
@@ -637,6 +643,7 @@
 				AA972D51293BA25700DF8B11 /* day3.input in Resources */,
 				AA972D6F2944EB3000DF8B11 /* day10.input in Resources */,
 				AA972D57293CEA2500DF8B11 /* day4.input in Resources */,
+				AA1028E02948E26A006664C2 /* day13.input in Resources */,
 				AA972D672942371200DF8B11 /* day8.input in Resources */,
 				AA1028DC29477A5A006664C2 /* day12.input in Resources */,
 				AA972D352938F02600DF8B11 /* Assets.xcassets in Resources */,
@@ -715,6 +722,7 @@
 				AA972D55293CE81C00DF8B11 /* Day4.swift in Sources */,
 				AA972D6D2944E6D900DF8B11 /* Day10.swift in Sources */,
 				AA972D4F293B9F8900DF8B11 /* Day3.swift in Sources */,
+				AA1028DE2948C80B006664C2 /* Day13.swift in Sources */,
 				AA972D69294381CD00DF8B11 /* Day9.swift in Sources */,
 				AA972D47293A410D00DF8B11 /* Day2.swift in Sources */,
 				AA972D432938FE0400DF8B11 /* Day1.swift in Sources */,
