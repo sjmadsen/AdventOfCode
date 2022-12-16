@@ -21,4 +21,9 @@ class PointTests: XCTestCase {
         expect(range ~= Point(x: 5, y: 5)) == true
         expect(range ~= Point(x: 6, y: 5)) == false
     }
+
+    func testManhattanDistance() {
+        expect(Point(x: 0, y: 0).manhattanDistance(from: Point(x: 1, y: 2))) == 3
+        expect(Point(x: 1, y: -2).manhattanDistance(from: Point(x: -5, y: 2))) == 10
+    }
 }

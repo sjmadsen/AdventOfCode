@@ -16,6 +16,10 @@ public struct Point {
         self.y = y
     }
 
+    public func manhattanDistance(from other: Point) -> Int {
+        abs(x - other.x) + abs(y - other.y)
+    }
+
     @inlinable
     public static func ~=<R: RangeExpression>(lhs: (R, R), rhs: Point) -> Bool where R.Bound == Int {
         lhs.0 ~= rhs.x && lhs.1 ~= rhs.y
