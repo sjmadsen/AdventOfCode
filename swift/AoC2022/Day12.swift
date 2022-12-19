@@ -22,8 +22,8 @@ abdefghi
     let goal: Point
 
     override init() {
-        var start = Point()
-        var goal = Point()
+        var start = Point.zero
+        var goal = Point.zero
         let input =
         try! String(contentsOf: Bundle.main.url(forResource: "day12", withExtension: "input")!)
 //        sample
