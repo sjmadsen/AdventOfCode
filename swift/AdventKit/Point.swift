@@ -9,7 +9,7 @@ import Foundation
 
 @frozen
 public struct Point {
-    public let x, y: Int
+    public var x, y: Int
 
     public init(x: Int, y: Int) {
         self.x = x
