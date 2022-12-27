@@ -129,6 +129,8 @@
 		AAE1D5D3276793F6001761F4 /* CountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1D5D2276793F6001761F4 /* CountTests.swift */; };
 		AAF7A0012957682600798279 /* Day24.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7A0002957682600798279 /* Day24.swift */; };
 		AAF7A0032957971500798279 /* day24.input in Resources */ = {isa = PBXBuildFile; fileRef = AAF7A0022957971500798279 /* day24.input */; };
+		AAF7A0052958B75D00798279 /* Day25.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7A0042958B75D00798279 /* Day25.swift */; };
+		AAF7A0072958CC3C00798279 /* day25.input in Resources */ = {isa = PBXBuildFile; fileRef = AAF7A0062958CC3C00798279 /* day25.input */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -284,6 +286,8 @@
 		AAE1D5D2276793F6001761F4 /* CountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTests.swift; sourceTree = "<group>"; };
 		AAF7A0002957682600798279 /* Day24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24.swift; sourceTree = "<group>"; };
 		AAF7A0022957971500798279 /* day24.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day24.input; sourceTree = "<group>"; };
+		AAF7A0042958B75D00798279 /* Day25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day25.swift; sourceTree = "<group>"; };
+		AAF7A0062958CC3C00798279 /* day25.input */ = {isa = PBXFileReference; lastKnownFileType = text; path = day25.input; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,6 +504,8 @@
 				AA437738295616E7002F720A /* day23.input */,
 				AAF7A0002957682600798279 /* Day24.swift */,
 				AAF7A0022957971500798279 /* day24.input */,
+				AAF7A0042958B75D00798279 /* Day25.swift */,
+				AAF7A0062958CC3C00798279 /* day25.input */,
 				AA972D342938F02600DF8B11 /* Assets.xcassets */,
 				AA972D392938F02600DF8B11 /* AoC2022.entitlements */,
 				AA972D362938F02600DF8B11 /* Preview Content */,
@@ -715,6 +721,7 @@
 				AA437719294CCFAF002F720A /* day16.input in Resources */,
 				AA972D382938F02600DF8B11 /* Preview Assets.xcassets in Resources */,
 				AA972D5B293E314300DF8B11 /* day5.input in Resources */,
+				AAF7A0072958CC3C00798279 /* day25.input in Resources */,
 				AA4377292950C565002F720A /* day19.input in Resources */,
 				AA437739295616E7002F720A /* day23.input in Resources */,
 				AA972D452939017100DF8B11 /* day1.input in Resources */,
@@ -832,6 +839,7 @@
 				AADE401629476D4C001C2724 /* Day12.swift in Sources */,
 				AA43771F294F72A6002F720A /* Day18.swift in Sources */,
 				AA972D612940D8D200DF8B11 /* Day7.swift in Sources */,
+				AAF7A0052958B75D00798279 /* Day25.swift in Sources */,
 				AA972D312938F02500DF8B11 /* AoC2022App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
