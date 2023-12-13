@@ -65,6 +65,17 @@ defmodule GridTests do
     assert Grid.at(grid, -1, 10) == nil
   end
 
+  test "columns/1" do
+    grid = Grid.parse(@input, &(&1 != "."))
+    assert Grid.columns(grid) == [
+      [{{0, 1}, "+"}, {{0, 3}, "1"}],
+      [{{1, 2}, "!"}, {{1, 3}, "2"}],
+      [{{2, 1}, "*"}, {{2, 3}, "3"}],
+      [{{3, 2}, "-"}, {{3, 3}, "4"}],
+      [{{4, 2}, "-"}]
+    ]
+  end
+
   test "orthogonal/2" do
     grid = Grid.parse(@input, &(&1 != "."))
     assert Grid.orthogonal(grid, {1, 2}) == [{1, 3, "2"}]
@@ -86,5 +97,25 @@ defmodule GridTests do
       [{{1, 2}, "!"}, {{3, 2}, "-"}, {{4, 2}, "-"}],
       [{{0, 3}, "1"}, {{1, 3}, "2"}, {{2, 3}, "3"}, {{3, 3}, "4"}]
     ]
+  end
+
+  defp grid_to_string(grid) do
+    Grid.rows(grid)
+    |> Enum.map(fn row ->
+      Enum.map(row, fn {position, contents} -> contents end)
+      |> Enum.join
+    end)
+    |> Enum.join("\n")
+  end
+
+  test "update/3" do
+    grid = Grid.parse(".x.\no.o\n!!!")
+    updated = Grid.update(grid, {1, 2}, "x")
+    |> grid_to_string
+    assert updated == ".x.\no.o\n!x!"
+
+    updated = Grid.update(grid, {3, 0}, ".")
+    |> grid_to_string
+    assert updated == ".x..\no.o\n!!!"
   end
 end

@@ -52,6 +52,17 @@ defmodule Grid do
   def at(%Grid{} = grid, position), do: Map.get(grid.data, position)
   def at(%Grid{} = grid, column, row), do: at(grid, {column, row})
 
+  def columns(grid) do
+    Map.keys(grid.data)
+    |> Enum.group_by(fn {column, _} -> column end)
+    |> Enum.map(fn {_, column} ->
+      Enum.map(column, fn position ->
+        {position, at(grid, position)}
+      end)
+      |> Enum.sort(fn {{_, row1}, _}, {{_, row2}, _} -> row1 <= row2 end)
+    end)
+  end
+
   def orthogonal(%Grid{} = grid, {column, row}), do: orthogonal(grid, column, row)
   def orthogonal(%Grid{} = grid, column, row) do
     [
@@ -70,6 +81,12 @@ defmodule Grid do
       Enum.map(row, fn position ->
         {position, at(grid, position)}
       end)
+      |> Enum.sort(fn {{col1, _}, _}, {{col2, _}, _} -> col1 <= col2 end)
     end)
+  end
+
+  def update(grid, position, contents) do
+    data = Map.put(grid.data, position, contents)
+    %Grid{grid | data: data}
   end
 end
