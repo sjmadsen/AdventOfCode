@@ -61,6 +61,7 @@ defmodule Grid do
       end)
       |> Enum.sort(fn {{_, row1}, _}, {{_, row2}, _} -> row1 <= row2 end)
     end)
+    |> Enum.sort(fn [{{col1, _}, _} | _], [{{col2, _}, _} | _] -> col1 <= col2 end)
   end
 
   def orthogonal(%Grid{} = grid, {column, row}), do: orthogonal(grid, column, row)
@@ -74,6 +75,11 @@ defmodule Grid do
     |> Enum.filter(fn {_, _, contents} -> contents end)
   end
 
+  def remove(grid, {column, row}), do: remove(grid, column, row)
+  def remove(grid, column, row) do
+    %Grid{grid | data: Map.delete(grid.data, {column, row})}
+  end
+
   def rows(grid) do
     Map.keys(grid.data)
     |> Enum.group_by(fn {_, row} -> row end)
@@ -83,6 +89,16 @@ defmodule Grid do
       end)
       |> Enum.sort(fn {{col1, _}, _}, {{col2, _}, _} -> col1 <= col2 end)
     end)
+    |> Enum.sort(fn [{{_, row1}, _} | _], [{{_, row2}, _} | _] -> row1 <= row2 end)
+  end
+
+  def to_string(grid) do
+    rows(grid)
+    |> Enum.map(fn row ->
+      Enum.map(row, fn {_position, contents} -> contents end)
+      |> Enum.join
+    end)
+    |> Enum.join("\n")
   end
 
   def update(grid, position, contents) do
