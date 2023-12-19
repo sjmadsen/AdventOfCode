@@ -6,17 +6,18 @@ defmodule Grid do
     data: %{{non_neg_integer(), non_neg_integer()} => any()}
   }
 
-  def parse(lines), do: parse(lines, fn _ -> true end)
-  def parse(lines, fun) do
+  def parse(lines), do: parse(lines, fn _ -> true end, &(&1))
+  def parse(lines, include?), do: parse(lines, include?, &(&1))
+  def parse(lines, include?, convert) do
     lines = String.trim(lines) |> String.split("\n")
     data = lines
     |> Enum.with_index
-    |> Enum.reduce(%{}, fn {row, row_index}, grid ->
+    |> Enum.reduce(%{}, fn {row, y}, grid ->
       String.graphemes(row)
       |> Enum.with_index
-      |> Enum.reduce(grid, fn {contents, col_index}, grid ->
+      |> Enum.reduce(grid, fn {contents, x}, grid ->
         cond do
-          fun.(contents) -> Map.put(grid, {col_index, row_index}, contents)
+          include?.(contents) -> Map.put(grid, Point.new(x, y), convert.(contents))
           true -> grid
         end
       end)
@@ -28,21 +29,20 @@ defmodule Grid do
     }
   end
 
-  def adjacent(%Grid{} = grid, {column, row}), do: adjacent(grid, column, row)
-  @spec adjacent(Grid.t(), number(), number()) :: list()
-  def adjacent(%Grid{} = grid, column, row) do
+  def adjacent(%Grid{} = grid, %Point{} = p) do
     [
-      {column - 1, row - 1, Grid.at(grid, column - 1, row - 1)},
-      {column, row - 1, Grid.at(grid, column, row - 1)},
-      {column + 1, row - 1, Grid.at(grid, column + 1, row - 1)},
-      {column - 1, row, Grid.at(grid, column - 1, row)},
-      {column + 1, row, Grid.at(grid, column + 1, row)},
-      {column - 1, row + 1, Grid.at(grid, column - 1, row + 1)},
-      {column, row + 1, Grid.at(grid, column, row + 1)},
-      {column + 1, row + 1, Grid.at(grid, column + 1, row + 1)}
+      {%Point{x: p.x - 1, y: p.y - 1}, Grid.at(grid, p.x - 1, p.y - 1)},
+      {%Point{x: p.x, y: p.y - 1}, Grid.at(grid, p.x, p.y - 1)},
+      {%Point{x: p.x + 1, y: p.y - 1}, Grid.at(grid, p.x + 1, p.y - 1)},
+      {%Point{x: p.x - 1, y: p.y}, Grid.at(grid, p.x - 1, p.y)},
+      {%Point{x: p.x + 1, y: p.y}, Grid.at(grid, p.x + 1, p.y)},
+      {%Point{x: p.x - 1, y: p.y + 1}, Grid.at(grid, p.x - 1, p.y + 1)},
+      {%Point{x: p.x, y: p.y + 1}, Grid.at(grid, p.x, p.y + 1)},
+      {%Point{x: p.x + 1, y: p.y + 1}, Grid.at(grid, p.x + 1, p.y + 1)}
     ]
-    |> Enum.filter(fn {_, _, contents} -> contents end)
+    |> Enum.filter(fn {_, contents} -> contents end)
   end
+  def adjacent(%Grid{} = grid, x, y), do: adjacent(grid, %Point{x: x, y: y})
 
   def all(%Grid{} = grid) do
     rows(grid)
@@ -50,46 +50,46 @@ defmodule Grid do
   end
 
   def at(%Grid{} = grid, position), do: Map.get(grid.data, position)
-  def at(%Grid{} = grid, column, row), do: at(grid, {column, row})
+  def at(%Grid{} = grid, x, y), do: at(grid, %Point{x: x, y: y})
 
   def columns(grid) do
     Map.keys(grid.data)
-    |> Enum.group_by(fn {column, _} -> column end)
+    |> Enum.group_by(fn point -> point.x end)
     |> Enum.map(fn {_, column} ->
-      Enum.map(column, fn position ->
-        {position, at(grid, position)}
+      Enum.map(column, fn point ->
+        {point, at(grid, point)}
       end)
-      |> Enum.sort(fn {{_, row1}, _}, {{_, row2}, _} -> row1 <= row2 end)
+      |> Enum.sort(fn {p1, _}, {p2, _} -> p1.y <= p2.y end)
     end)
-    |> Enum.sort(fn [{{col1, _}, _} | _], [{{col2, _}, _} | _] -> col1 <= col2 end)
+    |> Enum.sort(fn [{p1, _} | _], [{p2, _} | _] -> p1.x <= p2.x end)
   end
 
-  def orthogonal(%Grid{} = grid, {column, row}), do: orthogonal(grid, column, row)
-  def orthogonal(%Grid{} = grid, column, row) do
+  def orthogonal(%Grid{} = grid, %Point{} = p) do
     [
-      {column, row - 1, Grid.at(grid, column, row - 1)},
-      {column - 1, row, Grid.at(grid, column - 1, row)},
-      {column + 1, row, Grid.at(grid, column + 1, row)},
-      {column, row + 1, Grid.at(grid, column, row + 1)}
+      {%Point{x: p.x, y: p.y - 1}, Grid.at(grid, p.x, p.y - 1)},
+      {%Point{x: p.x - 1, y: p.y}, Grid.at(grid, p.x - 1, p.y)},
+      {%Point{x: p.x + 1, y: p.y}, Grid.at(grid, p.x + 1, p.y)},
+      {%Point{x: p.x, y: p.y + 1}, Grid.at(grid, p.x, p.y + 1)}
     ]
-    |> Enum.filter(fn {_, _, contents} -> contents end)
+    |> Enum.filter(fn {_, contents} -> contents end)
   end
+  def orthogonal(%Grid{} = grid, x, y), do: orthogonal(grid, %Point{x: x, y: y})
 
-  def remove(grid, {column, row}), do: remove(grid, column, row)
-  def remove(grid, column, row) do
-    %Grid{grid | data: Map.delete(grid.data, {column, row})}
+  def remove(grid, %Point{} = p) do
+    %Grid{grid | data: Map.delete(grid.data, p)}
   end
+  def remove(grid, x, y), do: remove(grid, %Point{x: x, y: y})
 
   def rows(grid) do
     Map.keys(grid.data)
-    |> Enum.group_by(fn {_, row} -> row end)
+    |> Enum.group_by(fn point -> point.y end)
     |> Enum.map(fn {_, row} ->
-      Enum.map(row, fn position ->
-        {position, at(grid, position)}
+      Enum.map(row, fn point ->
+        {point, at(grid, point)}
       end)
-      |> Enum.sort(fn {{col1, _}, _}, {{col2, _}, _} -> col1 <= col2 end)
+      |> Enum.sort(fn {p1, _}, {p2, _} -> p1.x <= p2.x end)
     end)
-    |> Enum.sort(fn [{{_, row1}, _} | _], [{{_, row2}, _} | _] -> row1 <= row2 end)
+    |> Enum.sort(fn [{p1, _} | _], [{p2, _} | _] -> p1.y <= p2.y end)
   end
 
   def to_string(grid) do
@@ -101,8 +101,7 @@ defmodule Grid do
     |> Enum.join("\n")
   end
 
-  def update(grid, position, contents) do
-    data = Map.put(grid.data, position, contents)
-    %Grid{grid | data: data}
+  def update(grid, %Point{} = p, contents) do
+    %Grid{grid | data: Map.put(grid.data, p, contents)}
   end
 end
