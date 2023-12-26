@@ -12,4 +12,8 @@ defmodule PointTests do
   test "mul/2" do
     assert Point.mul(Point.new(1, 2), Point.new(2, 2)) == Point.new(2, 4)
   end
+
+  test "sub/2" do
+    assert Point.sub(Point.new(1, 2), Point.new(1, 1)) == Point.new(0, 1)
+  end
 end
