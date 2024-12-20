@@ -18,6 +18,9 @@ class Point:
     def __hash__(self):
         return hash((self.x, self.y))
 
+    def __lt__(self, other):
+        return self.x < other.x and self.y < other.y
+
     def __add__(self, other):
         return Point(self.x + other.x, self.y + other.y)
 
@@ -29,3 +32,9 @@ class Point:
             return Point(self.x * other, self.y * other)
         else:
             raise TypeError(f"Can't multiply a Point with a {type(other)}")
+
+    def __truediv__(self, other):
+        if isinstance(other, int):
+            return Point(self.x / other, self.y / other)
+        else:
+            raise TypeError(f"Can't divide a Point by a {type(other)}")
