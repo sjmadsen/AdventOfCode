@@ -92,13 +92,9 @@ def cheat(path, max):
     for pair in it.combinations(path, 2):
         d = distance(pair[0], pair[1])
         if d < 2 or d > max + 1: continue
-        subset = {pair[0], pair[1]}
-        for p in walls:
-            if distance(pair[1], p) <= max: subset.add(p)
-        shortcut = reconstruct_path(a_star(subset | maze, pair[0], pair[1]), pair[1])
-        if shortcut[0] == pair[0]:
-            d = abs(path_index[pair[0]] - path_index[pair[1]]) - (len(shortcut) - 1)
-            if d > 0: savings[d] += 1
+        saved = abs(path_index[pair[0]] - path_index[pair[1]]) - d
+        if saved > 0:
+            savings[saved] += 1
     return savings
 
 sum = 0
